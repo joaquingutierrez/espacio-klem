@@ -4,175 +4,72 @@
     font-size: 2.25rem;
     text-align: center;
 }
-.rectangulo {
+
+.rectanguloContacto {
     height: 544px;
-    width: 1440px;
-    left: 100px;
-    top: 160px;
-    border-radius: 0px;
-    padding: 64px 156px 64px 156px;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 64px 156px;
-    gap: 216px;
-    
-    width: 1440px;
-    height: 544px;
-    
-    /* Crema
-    
-    Tipografía
-    */
-    background: #DED8BE;
-    
-    /* Inside auto layout */
-    
-    flex: none;
-    order: 1;
-    flex-grow: 0;    
+    gap: 50px;
+    background-color: #DED8BE;
 }
 
-.titulo{
-    height: 30px;
-    width: 516px;
-    left: 500px;
-    top: 10px;
-    border-radius: nullpx;
-    
-
-/* H3 - titulo */
-
-font-family: 'Arima Madurai';
-font-style: normal;
-font-weight: 800;
-font-size: 24px;
-line-height: 30px;
-/* identical to box height, or 125% */
-
-letter-spacing: 0.015em;
-
-/* Azul */
-
-color: #14232A;
-
-
-/* Inside auto layout */
-
-flex: none;
-order: 0;
-flex-grow: 1;
-text-align:right;
+.contenidoDeContacto {
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
 }
 
-.horario{
-    height: 24px;
-    width: 482px;
-    left: 44px;
-    top: 10px;
-    border-radius: nullpx;
-    
-
-/* B1b - cuerpo */
-
-font-family: 'Lato';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 24px;
-/* identical to box height, or 150% */
-
-letter-spacing: 0.5px;
-
-/* Azul */
-
-color: #14232A;
-
-
-/* Inside auto layout */
-
-flex: none;
-order: 1;
-flex-grow: 1;
+.tituloUbicacion {
+    font-family: 'Arima Madurai';
+    font-size: 1.5rem;
+    color: #14232A;
 }
 
-.Whatsapp{
-    width: 482px;
-height: 24px;
-
-/* B1b - cuerpo */
-
-font-family: 'Lato';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 24px;
-/* identical to box height, or 150% */
-
-letter-spacing: 0.5px;
-
-/* Azul */
-
-color: #14232A;
-
-
-/* Inside auto layout */
-
-flex: none;
-order: 1;
-flex-grow: 1;
+.logoYTextoflex {
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
-.Email{
-    height: 24px;
-width: 482px;
-left: 44px;
-top: 10px;
-border-radius: nullpx;
-font-family: 'Lato';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 24px;
-/* identical to box height, or 150% */
-
-letter-spacing: 0.5px;
-
-/* Azul */
-
-color: #14232A;
-
-
-/* Inside auto layout */
-
-flex: none;
-order: 1;
-flex-grow: 1;
+.horarioContacto {
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    color: #14232A;
 }
 
-.asistencia{
-    width: 516px;
-height: 84px;
+.WhatsappContacto {
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    color: #14232A;
+}
 
-font-family: 'Lato';
-font-style: normal;
-font-weight: 700;
-font-size: 16px;
-line-height: 24px;
-/* or 150% */
+.EmailContacto {
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    line-height: 24px;
+    color: #14232A;
+}
 
-letter-spacing: 0.5px;
+.asistenciaContacto {
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    line-height: 24px;
+    color: #14232A;
+}
 
-/* Azul */
-
-color: #14232A;
-
-
-/* Inside auto layout */
-
-flex: none;
-order: 0;
-align-self: stretch;
-flex-grow: 0;
+@media (min-width: 0px) and (max-width: 840px) {
+    .imagenContacto img {
+        height: 380px;
+    }
+}
+@media (min-width: 0px) and (max-width: 1094px) {
+    .imagenContacto img {
+        height: 350px;
+    }
 }

@@ -1,8 +1,19 @@
-#PfContainer {
+#preguntasFrecuentesContainer {
     width: 75%;
     margin: auto;
 }
 
+.seccionPreguntas {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 40px;
+}
+.logoMasPregunta {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
 
 .tituloPreguntas {
     font-family: 'Arima Madurai', cursive;
@@ -12,56 +23,29 @@
 }
 
 .texto {
-    width: 491px;
-height: 156px;
-
-/* B1b - cuerpo */
-
 font-family: 'Lato';
 font-style: normal;
 font-weight: 400;
-font-size: 16px;
+font-size: 1rem;
 line-height: 24px;
-
-/* or 150% */
-
-display: flex;
-align-items: center;
 letter-spacing: 0.5px;
-
 color: #EDDAC7;
-
-
-/* Inside auto layout */
-
-flex: none;
-order: 0;
-flex-grow: 0;
+margin-left: 35px;
 }
 
-.p-3{ 
-    width: 522px;
-height: -26px;
-
-/* H3 - titulo */
-
+.tituloPregunta{ 
 font-family: 'Arima Madurai';
 font-style: normal;
 font-weight: 800;
-font-size: 24px;
+font-size: 1.5rem;
 line-height: 30px;
-/* identical to box height, or 125% */
-
-display: flex;
-align-items: center;
 letter-spacing: 0.015em;
 text-align: justify;
 color: #EDDAC7;
+}
 
-
-/* Inside auto layout */
-
-flex: none;
-order: 1;
-flex-grow: 1;
+@media (min-width:0) and (max-width:839px)  {
+    .seccionPreguntas {
+        flex-direction: column;
+    }
 }

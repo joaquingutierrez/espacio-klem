@@ -1,5 +1,6 @@
 .navBar {
     display: flex;
+    gap: 30px;
     justify-content: space-around;
     background-color: #14232A;
     width: 75%;
@@ -9,6 +10,9 @@
     z-index: 5;
 }
 
+.navBarItem {
+    text-align: center;
+}
 .navBarLink {
     font-family: 'Arima Madurai', cursive;
     color: #DED8BE;
@@ -78,5 +82,8 @@
     .logoEspacioKlemMovile img {
         width: 328px;
         height: 297px;
+    }
+    .navBar {
+        width: 100%;
     }
 }
