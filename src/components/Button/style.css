@@ -1,0 +1,19 @@
+.contenedorBotonHome {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+.botonHome {
+    font-size: 1rem;
+    padding: 10px;
+    font-family: 'Arima Madurai', cursive;
+    color: #DED8BE;
+    border: 1px solid #DED8BE;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.botonHome:hover {
+    background-color: #DED8BE;
+    color: #14232A;
+}

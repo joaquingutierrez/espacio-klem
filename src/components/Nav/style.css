@@ -1,0 +1,82 @@
+.navBar {
+    display: flex;
+    justify-content: space-around;
+    background-color: #14232A;
+    width: 75%;
+    margin: 36px auto;
+    position: sticky;
+    top: 32px;
+    z-index: 5;
+}
+
+.navBarLink {
+    font-family: 'Arima Madurai', cursive;
+    color: #DED8BE;
+    font-size: 1rem;
+    position: relative;
+    text-decoration: none;
+}
+
+.navBarLink:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 0.08rem;
+    width: 100%;
+    background-color: #DED8BE;
+    transform-origin: left;
+    transform: scaleX(0);
+    transition: transform 0.2s ease-in-out;
+}
+
+.navBarLink:hover:after {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.logoEspacioKlem {
+    margin-top: 36px;
+    display: flex;
+    justify-content: center;
+}
+.logoEspacioKlem img{
+    width: 96px;
+    height: 87px;
+}
+.logoEspacioKlemMovile {
+    display: none;
+}
+
+
+.active:before {
+    color: red;
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 0.08rem;
+    width: 100%;
+    background-color: #DED8BE;
+    transform-origin: left;
+    transform: scaleX(0);
+    transition: transform 0.2s ease-in-out;
+}
+.active:after {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+@media (min-width:0) and (max-width:480px) {
+    .logoEspacioKlem {
+        display: none;
+    }
+    .logoEspacioKlemMovile {
+        display: flex;
+        justify-content: center;
+    }
+    .logoEspacioKlemMovile img {
+        width: 328px;
+        height: 297px;
+    }
+}

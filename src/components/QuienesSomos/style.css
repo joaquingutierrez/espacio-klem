@@ -1,0 +1,114 @@
+#quienesSomosContainer {
+    width: 75%;
+    margin: auto;
+}
+
+.tituloQuienesSomos {
+    font-family: 'Arima Madurai', cursive;
+    color: #DED8BE;
+    font-size: 2.25rem;
+    text-align: center;
+}
+
+.contenedorSobreNuestroEspacio {
+    display: flex;
+    align-items: center;
+    gap: 5%;
+    margin-top: 50px;
+}
+.contenedorSobreNosotros{
+    display: flex;
+    align-items: center;
+    gap: 5%;
+    margin-top: 50px;
+}
+
+.contenedorImagenSobreNuestroEspacio {
+    width: 552px;
+    min-width: 552px;
+    height: 648px;
+    border-radius: 50% 50% 0 0;
+    overflow: hidden;
+}
+.contenedorImagenSobreNosotros {
+    width: 552px;
+    min-width: 552px;
+    height: 416px;
+    overflow: hidden;
+}
+
+.textoQuienesSomos {
+    text-align: justify;
+}
+
+.textoQuienesSomos h3 {
+    font-family: 'Arima Madurai', cursive;
+    color: #DED8BE;
+    font-size: 2.25rem;
+    text-align: left;
+}
+
+.textoQuienesSomos p {
+    font-family: 'Lato', sans-serif;
+    color: #DED8BE;
+}
+
+@media (min-width:1121px) and (max-width:1260px) {
+    .contenedorImagenSobreNuestroEspacio {
+        width: 452px;
+        min-width: 452px;
+        height: 548px;
+    }
+    .contenedorImagenSobreNosotros {
+        width: 452px;
+        min-width: 452px;
+        height: 316px;
+    }
+}
+@media (min-width:981px) and (max-width:1120px) {
+    .contenedorImagenSobreNuestroEspacio {
+        width: 352px;
+        min-width: 352px;
+        height: 448px;
+    }
+    .contenedorImagenSobreNosotros {
+        width: 352px;
+        min-width: 352px;
+        height: 216px;
+    }
+}
+@media (min-width:840px) and (max-width:980px) {
+    .contenedorImagenSobreNuestroEspacio {
+        width: 252px;
+        min-width: 252px;
+        height: 348px;
+    }
+    .contenedorImagenSobreNosotros {
+        width: 252px;
+        min-width: 252px;
+        height: 116px;
+    }
+}
+@media (min-width:0) and (max-width:839px) {
+    .contenedorImagenSobreNuestroEspacio {
+        width: 300px;
+        min-width: 300px;
+        height: 396px;
+    }
+    .contenedorImagenSobreNosotros {
+        width: 300px;
+        min-width: 300px;
+        height: 164px;
+    }
+    .contenedorSobreNuestroEspacio {
+        flex-direction: column;
+    }
+    .contenedorSobreNosotros {
+        flex-direction: column-reverse;
+    }
+}
+@media (min-width:0) and (max-width:480px) {
+    #quienesSomosContainer {
+        width: 75%;
+    }
+}

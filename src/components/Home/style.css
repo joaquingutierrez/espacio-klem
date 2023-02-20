@@ -1,0 +1,48 @@
+#homeContainer {
+    width: 75%;
+    margin: auto;
+}
+.tituloHome {
+    font-family: 'Arima Madurai', cursive;
+    color: #DED8BE;
+    text-align: center;
+    font-size: 2.813rem;
+}
+.parrafoHome {
+    font-family: 'Lato', sans-serif;
+    color: #DED8BE;
+    text-align: center;
+    font-size: 1rem;
+}
+.contenedorImagenesHome {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-bottom: 80px;
+}
+.imagen1HomeContainer {
+    width: 243px;
+    height: 379px;
+    overflow: hidden;
+    position: relative;
+    top: 40px;
+}
+.imagen2HomeContainer {
+    width: 243px;
+    height: 379px;
+    overflow: hidden;
+    position: relative;
+}
+.imagenHome {
+    width: 570px;
+    height: 381px;
+    position: absolute;
+    left: -163px;
+    top: -2px;
+}
+
+@media (min-width:0) and (max-width:480px) {
+    .displayNoneHomeMovile {
+        display: none;
+    }
+}

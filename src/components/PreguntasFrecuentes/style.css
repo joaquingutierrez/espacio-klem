@@ -1,0 +1,67 @@
+#PfContainer {
+    width: 75%;
+    margin: auto;
+}
+
+
+.tituloPreguntas {
+    font-family: 'Arima Madurai', cursive;
+    color: #DED8BE;
+    font-size: 2.25rem;
+    text-align: center;
+}
+
+.texto {
+    width: 491px;
+height: 156px;
+
+/* B1b - cuerpo */
+
+font-family: 'Lato';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+/* or 150% */
+
+display: flex;
+align-items: center;
+letter-spacing: 0.5px;
+
+color: #EDDAC7;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+.p-3{ 
+    width: 522px;
+height: -26px;
+
+/* H3 - titulo */
+
+font-family: 'Arima Madurai';
+font-style: normal;
+font-weight: 800;
+font-size: 24px;
+line-height: 30px;
+/* identical to box height, or 125% */
+
+display: flex;
+align-items: center;
+letter-spacing: 0.015em;
+text-align: justify;
+color: #EDDAC7;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+flex-grow: 1;
+}

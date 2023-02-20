@@ -1,0 +1,26 @@
+.contenedorCard{
+    width: 264px;
+    margin: 20px;
+}
+
+.contenedorImagenCard {
+    height: 320px;
+    overflow: hidden;
+    border-radius: 50% 50% 0 0;
+}
+
+.tituloCard{
+    font-family: 'Arima Madurai', cursive;
+    color: #DED8BE;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 10px;
+}
+
+.parrafoCard {
+    font-family: 'Lato', sans-serif;
+    color: #DED8BE;
+    font-size: 0.875rem;
+    margin: 10px;
+    text-align: justify;
+}

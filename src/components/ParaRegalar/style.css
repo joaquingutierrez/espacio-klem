@@ -1,0 +1,34 @@
+#quienesSomosContainer {
+    width: 75%;
+    margin: auto;
+}
+.tituloQuienesSomos {
+    font-family: 'Arima Madurai', cursive;
+    color: #DED8BE;
+    font-size: 2.25rem;
+    text-align: center;
+}
+.contenedorSobreNuestroEspacio {
+    display: flex;
+    width: 100%;
+}
+.contenedorImagenSobreNuestroEspacio {
+    width: 552px;
+    min-width: 552px;
+    height: 648px;
+    border-radius: 50% 50% 0 0;
+    overflow: hidden;
+}
+.textoSobreNuestroEspacio {
+    margin: auto 7%;
+    text-align: justify;
+}
+.textoSobreNuestroEspacio h3 {
+    font-family: 'Arima Madurai', cursive;
+    color: #DED8BE;
+    font-size: 2.25rem;
+}
+.textoSobreNuestroEspacio p {
+    font-family: 'Lato', sans-serif;
+    color: #DED8BE;
+}
