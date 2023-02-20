@@ -1,9 +1,19 @@
-import React from 'react'
+import React, {useContext, useEffect} from 'react'
+import { AnchorsContext } from "../../context/anchorsContext";
 import "./style.css"
 
 function Contacto() {
+
+  const { allAnchors } = useContext(AnchorsContext)
+
+  useEffect(() => {
+    const anchorContacto = document.getElementById("contactoContainer")
+    allAnchors.push({ name: "CONTACTO", anchor: anchorContacto })
+}, [])
+
+
   return (
-    <>
+    <div id="contactoContainer">
       <h2 className="tituloContacto">Contacto</h2>
       <div className="rectangulo">
 
@@ -15,7 +25,7 @@ function Contacto() {
           En caso de querer cancelar el turno, por favor, avisanos con anticipación.</p>
 
       </div>
-    </>
+    </div>
   )
 }
 
