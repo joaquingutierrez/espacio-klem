@@ -150,16 +150,16 @@ const Nav = () => {
                 <img src={logoEspacioKlem} alt="Logo de Espacio Klem" />
 
             </div>
-                <div className="navBar">
-                    {navLinks.map((item, index) => {
-                        if (allMyAnchors.length > 0) {
-                            const myAnchor = allMyAnchors.filter(anchor => anchor.name === item.name)[0]
-                            if (myAnchor !== undefined) {
-                            }
+            <div className="navBar">
+                {navLinks.map((item, index) => {
+                    if (allMyAnchors.length > 0) {
+                        const myAnchor = allMyAnchors.filter(anchor => anchor.name === item.name)[0]
+                        if (myAnchor !== undefined) {
                         }
-                        return <h2 key={index} className="navBarItem"><a id={item.id} className="navBarLink" href={item.href}>{item.name}</a></h2>
-                    })}
-                </div>
+                    }
+                    return <h2 key={index} className="navBarItem"><a id={item.id} className="navBarLink" href={item.href}>{item.name}</a></h2>
+                })}
+            </div>
 
             <div className="logoEspacioKlemMovile">
                 <img src={logoEspacioKlem} alt="Logo de Espacio Klem" />
