@@ -9,6 +9,9 @@ import menuHamburguesa from "../../assets/Menu.png"
 const Nav = () => {
 
     const [allMyAnchors, setAllMyAnchors] = useState([])
+    const [state, setState] = useState({
+        menuOpen: false
+    })
 
     const navLinks = [
         { name: "INICIO", href: "#home", id: "inicioLink" },
@@ -25,7 +28,6 @@ const Nav = () => {
     const callback = function (entries) {
         entries.forEach((entry) => {
             if (entry.isIntersecting) {
-                console.log(entry.target.id)
                 switch (entry.target.id) {
                     case "homeContainer": {
                         document.getElementById("inicioLink").classList.add("active");
@@ -112,12 +114,32 @@ const Nav = () => {
     }, [allAnchors])
 
 
+
+    // This keeps your state in sync with the opening/closing of the menu
+    // via the default means, e.g. clicking the X, pressing the ESC key etc.
+    const handleStateChange = (state) => {
+        setState({ menuOpen: state.isOpen })
+    }
+
+    // This can be used to close the menu, e.g. when a user clicks a menu item
+    const closeMenu = () => {
+        setState({ menuOpen: false })
+    }
+
+    // This can be used to toggle the menu, e.g. when using a custom icon
+    // Tip: You probably want to hide either/both default icons if using a custom icon
+    // See https://github.com/negomi/react-burger-menu#custom-icons
+    const toggleMenu = () => {
+        setState(state => ({ menuOpen: !state.menuOpen }))
+    }
+
+
     return (
         <>
             <div className="navParaMovile">
-                <Menu height= {"fit-content"} width={ '100%' } customBurgerIcon={ <img src={menuHamburguesa} /> }>
+                <Menu width={'100%'} customBurgerIcon={<img src={menuHamburguesa} />} isOpen={state.menuOpen} onStateChange={(state) => handleStateChange(state)}>
                     {navLinks.map((item, index) => {
-                        return <h2 key={index} className="navBarItem menu-item"><a id={item.id} className="navBarLink" href={item.href}>{item.name}</a></h2>
+                        return <h2 onClick={() => closeMenu()} key={index} className="navBarItem menu-item"><a id={item.id} className="navBarLink" href={item.href}>{item.name}</a></h2>
                     })}
                 </Menu >
                 <h1 className="tituloNavMovile">Espacio Klem</h1>
@@ -127,15 +149,18 @@ const Nav = () => {
                 <img src={logoEspacioKlem} alt="Logo de Espacio Klem" />
 
             </div>
-            <div className="navBar">
-                {navLinks.map((item, index) => {
-                    if (allMyAnchors.length > 0) {
-                        const myAnchor = allMyAnchors.filter(anchor => anchor.name === item.name)[0]
-                        if (myAnchor !== undefined) {
+            <div id="navBarContainer">
+                <div className="navBar">
+                    {navLinks.map((item, index) => {
+                        if (allMyAnchors.length > 0) {
+                            const myAnchor = allMyAnchors.filter(anchor => anchor.name === item.name)[0]
+                            if (myAnchor !== undefined) {
+                            }
                         }
-                    }
-                    return <h2 key={index} className="navBarItem"><a id={item.id} className="navBarLink" href={item.href}>{item.name}</a></h2>
-                })}
+                        return <h2 key={index} className="navBarItem"><a id={item.id} className="navBarLink" href={item.href}>{item.name}</a></h2>
+                    })}
+                </div>
+
             </div>
             <div className="logoEspacioKlemMovile">
                 <img src={logoEspacioKlem} alt="Logo de Espacio Klem" />

@@ -11,6 +11,12 @@ body {
   top: -130px;
 }
 
+@media (max-width: 573px) {
+  .anchor {
+    top: -80px;
+  }
+}
+
 .App {
   text-align: center;
 }

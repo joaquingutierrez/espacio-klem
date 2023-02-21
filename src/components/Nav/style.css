@@ -1,13 +1,23 @@
+#navBarContainer {
+    width: 100%;
+    background-color: #14232A;
+    z-index: 16;
+    margin: 36px auto;
+    position: sticky;
+    top: 32px;
+}
+
 .navBar {
+    margin: auto;
     display: flex;
     gap: 30px;
     justify-content: space-around;
     background-color: #14232A;
-    width: 100%;
+    width: 75%;
+/*     z-index: 16;
     margin: 36px auto;
     position: sticky;
-    top: 32px;
-    z-index: 5;
+    top: 32px; */
 }
 
 .navBarItem {
@@ -54,7 +64,6 @@
 .logoEspacioKlemMovile {
     display: none;
 }
-
 
 .active:before {
     color: red;
