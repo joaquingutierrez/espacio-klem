@@ -4,6 +4,49 @@ html {
 body {
   background-color: #14232A;
 }
+
+
+.contenedorBordes {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.bordeIzquierdo {
+  background-image: url("./assets/bordes.png");
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 96px;
+  background-repeat: repeat-y;
+  z-index: 15;
+}
+
+.bordeDerecho {
+  background-image: url("./assets/bordes.png");
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 96px;
+  background-repeat: repeat-y;
+  z-index: 15;
+}
+
+@media (min-width: 0) and (max-width: 768px) {
+  .contenedorBordes {
+      display: none;
+  }
+}
+
+
+
+
+
+
+
+
 .anchor {
   display: block;
   position: relative;

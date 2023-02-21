@@ -1,3 +1,4 @@
+import React from 'react';
 import './App.css';
 import Encabezado from './components/Encabezado/Encabezado';
 import Nav from './components/Nav/Nav'
@@ -9,14 +10,19 @@ import PreguntasFrecuentes from "./components/PreguntasFrecuentes/PreguntasFrecu
 import Contacto from "./components/Contacto/Contacto"
 import Footer from "./components/Footer/Footer"
 import AnchorsProvider from './context/anchorsContext';
-import Bordes from './components/Bordes/Bordes';
 
 
 
 function App() {
   return (
-    <>
-      <Bordes />
+    <div className="contenedorBordes">
+      <div className="bordeIzquierdo">
+
+      </div>
+      <div className="bordeDerecho">
+
+      </div>
+
       <AnchorsProvider>
         <Encabezado />
         <Nav />
@@ -29,7 +35,7 @@ function App() {
         <Footer />
       </AnchorsProvider>
 
-    </>
+    </div>
   );
 }
 
