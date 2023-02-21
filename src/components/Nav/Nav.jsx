@@ -27,6 +27,7 @@ const Nav = () => {
 
     const callback = function (entries) {
         entries.forEach((entry) => {
+            console.log(entry.target.id);
             if (entry.isIntersecting) {
                 switch (entry.target.id) {
                     case "homeContainer": {

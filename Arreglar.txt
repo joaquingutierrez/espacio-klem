@@ -1,3 +1,4 @@
 NavBar desaparece en 573px
 en 320px hay scroll a la derecha debido al logo de espacio klem
-seccion contacto en desktop tiene pucho padding hacias arriba y hacia abajo
+seccion contacto en desktop tiene mucho padding hacias arriba y hacia abajo
+No funciona el active del nav en vercel

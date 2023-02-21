@@ -1,0 +1,87 @@
+.footerContainer {
+    width: 75%;
+    margin: auto;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.logoFooterContainer img {
+    height: 337px;
+}
+
+.menuFooterContainer {}
+
+.tituloFooter {
+    font-family: 'Arima Madurai', cursive;
+    color: #DED8BE;
+    font-size: 1rem;
+}
+
+.linksFooter {
+    font-family: 'Lato', sans-serif;
+    text-decoration: none;
+    color: #DED8BE;
+    font-size: 1rem;
+}
+
+.separacionFooter {
+    height: 2px;
+    background-color: #DED8BE;
+    margin: auto;
+    border-radius: 50%;
+}
+
+.finalFooter {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 50px;
+}
+
+.finalFooter h3 {
+    font-family: 'Lato', sans-serif;
+    color: #DED8BE;
+    font-size: 0.875rem;
+}
+
+.redesSocialesFooter {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.subtituloFooter {
+    font-family: 'Lato', sans-serif;
+    color: #DED8BE;
+    font-size: 1rem;
+}
+
+.promocionesContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.inputFooterContainer {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 40px;
+}
+.inputPromocionesFooter {
+    width: 448px;
+    height: 72px;
+    background: #F9F9FF;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    padding: 0 25px;
+}
+.botonSuscribirmeFooter {
+    background-color: #800000;
+    color: #DED8BE;
+    font-family: 'Arima Madurai', cursive;
+    padding: 24px 36px;
+    border-radius: 40px;
+    cursor: pointer;
+}

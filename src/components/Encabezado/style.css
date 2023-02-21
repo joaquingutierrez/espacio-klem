@@ -22,10 +22,14 @@
 .parrafoEncabezado {
     font-family: 'Lato', sans-serif;
     font-size: 0.75rem;
+    margin: auto 0;
+    color: #14232A;
 }
 .tituloEncabezado {
     font-family: 'Arima Madurai', cursive;
+    color: #14232A;
     font-size: 0.875rem;
+    margin: auto;
 }
 
 @media (min-width:0) and (max-width:480px) {
