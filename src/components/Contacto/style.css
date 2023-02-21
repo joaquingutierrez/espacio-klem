@@ -6,7 +6,7 @@
 }
 
 .rectanguloContacto {
-    height: 544px;
+    height: fit-content;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -14,6 +14,7 @@
     align-items: center;
     gap: 50px;
     background-color: #DED8BE;
+    padding: 8% 0;
 }
 
 .contenidoDeContacto {
@@ -63,13 +64,16 @@
     color: #14232A;
 }
 
-@media (min-width: 0px) and (max-width: 840px) {
-    .imagenContacto img {
-        height: 380px;
+@media (min-width:0) and (max-width:839px) {
+    .contenidoDeContacto {
+        flex-direction: column;
+        gap: 0;
     }
-}
-@media (min-width: 0px) and (max-width: 1094px) {
+    .imagenContacto {
+        display: flex;
+        justify-content: center;
+    }
     .imagenContacto img {
-        height: 350px;
+        width: 95%;
     }
 }

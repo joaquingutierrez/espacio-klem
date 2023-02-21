@@ -116,9 +116,9 @@ const Nav = () => {
         <>
             <div className="navParaMovile">
                 <Menu customBurgerIcon={ <img src={menuHamburguesa} /> }>
-                    <a id="home" className="menu-item" href="/">Home</a>
-                    <a id="about" className="menu-item" href="/about">About</a>
-                    <a id="contact" className="menu-item" href="/contact">Contact</a>
+                    {navLinks.map((item, index) => {
+                        return <h2 key={index} className="navBarItem menu-item"><a id={item.id} className="navBarLink" href={item.href}>{item.name}</a></h2>
+                    })}
                 </Menu >
                 <h1 className="tituloNavMovile">Espacio Klem</h1>
 
