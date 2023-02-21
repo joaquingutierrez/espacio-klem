@@ -18,6 +18,7 @@ function Contacto() {
 
   return (
     <div id="contactoContainer">
+      <a className="anchor" id="contacto"></a>
       <h2 className="tituloContacto">Contacto</h2>
       <div className="rectanguloContacto">
         <div className='contenidoDeContacto'>

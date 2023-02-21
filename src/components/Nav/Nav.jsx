@@ -14,9 +14,9 @@ const Nav = () => {
         { name: "INICIO", href: "#home", id: "inicioLink" },
         { name: "SERVICIOS", href: "#servicios", id: "serviciosLink" },
         { name: "QUIÉNES SOMOS", href: "#quienesSomos", id: "quienesSomosLink" },
-        { name: "PARA REGALAR", href: "#home", id: "paraRegalarLink" },
-        { name: "PREGUNTAS FRECUENTES", href: "#home", id: "preguntasFrecuentesLink" },
-        { name: "CONTACTO", href: "#home", id: "contactoLink" },
+        { name: "PARA REGALAR", href: "#paraRegalar", id: "paraRegalarLink" },
+        { name: "PREGUNTAS FRECUENTES", href: "#preguntasFrecuentes", id: "preguntasFrecuentesLink" },
+        { name: "CONTACTO", href: "#contacto", id: "contactoLink" },
     ]
 
     const { allAnchors } = useContext(AnchorsContext)
@@ -115,7 +115,7 @@ const Nav = () => {
     return (
         <>
             <div className="navParaMovile">
-                <Menu customBurgerIcon={ <img src={menuHamburguesa} /> }>
+                <Menu height= {"fit-content"} width={ '100%' } customBurgerIcon={ <img src={menuHamburguesa} /> }>
                     {navLinks.map((item, index) => {
                         return <h2 key={index} className="navBarItem menu-item"><a id={item.id} className="navBarLink" href={item.href}>{item.name}</a></h2>
                     })}
