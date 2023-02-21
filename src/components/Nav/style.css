@@ -1,12 +1,3 @@
-#navBarContainer {
-/*     width: 100%;
-    background-color: #14232A;
-    z-index: 16;
-    margin: 36px auto;
-    position: sticky;
-    top: 32px; */
-}
-
 .navBar {
     margin: auto;
     display: flex;
