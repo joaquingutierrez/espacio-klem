@@ -13,6 +13,7 @@
 .navBarItem {
     text-align: center;
 }
+
 .navBarLink {
     font-family: 'Arima Madurai', cursive;
     color: #DED8BE;
@@ -44,10 +45,12 @@
     display: flex;
     justify-content: center;
 }
-.logoEspacioKlem img{
+
+.logoEspacioKlem img {
     width: 96px;
     height: 87px;
 }
+
 .logoEspacioKlemMovile {
     display: none;
 }
@@ -66,6 +69,7 @@
     transform: scaleX(0);
     transition: transform 0.2s ease-in-out;
 }
+
 .active:after {
     transform-origin: left;
     transform: scaleX(1);
@@ -75,15 +79,116 @@
     .logoEspacioKlem {
         display: none;
     }
+
     .logoEspacioKlemMovile {
         display: flex;
         justify-content: center;
     }
+
     .logoEspacioKlemMovile img {
         width: 328px;
         height: 297px;
     }
+
     .navBar {
         width: 100%;
+    }
+}
+.navParaMovile {
+    z-index: 15151515;
+    top: 50px;
+    display: flex;
+}
+
+@media (max-width: 573px) {
+    .navParaMovile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #DED8BE;
+        width: 100%;
+        height: 48px;
+        position: sticky;
+        top: 0;
+        z-index: 200000000000000000000000000000;
+        position: relative;
+    }
+
+    .navBar {
+        display: none;
+    }
+
+    /* Position and sizing of burger button */
+    .bm-burger-button {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        margin: 2%;
+    }
+
+    /* Color/shape of burger icon bars */
+    .bm-burger-bars {
+        background: #14232A;
+    }
+
+    /* Color/shape of burger icon bars on hover*/
+    .bm-burger-bars-hover {
+        background: #a90000;
+    }
+
+    /* Position and sizing of clickable cross button */
+    .bm-cross-button {
+        height: 24px;
+        width: 24px;
+    }
+
+    /* Color/shape of close button cross */
+    .bm-cross {
+        background: black;
+    }
+
+    /*
+  Sidebar wrapper styles
+  Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+  */
+    .bm-menu-wrap {
+        position: fixed;
+        height: 100%;
+    }
+
+    /* General sidebar styles */
+    .bm-menu {
+        background: #DED8BE;
+        padding: 2.5em 1.5em 0;
+        font-size: 1.15em;
+    }
+
+    /* Morph shape necessary with bubble or elastic */
+    .bm-morph-shape {
+        fill: #373a47;
+    }
+
+    /* Wrapper for item list */
+    .bm-item-list {
+        color: #b8b7ad;
+        padding: 0.8em;
+    }
+
+    /* Individual item */
+    .bm-item {
+        display: inline-block;
+    }
+
+    /* Styling of overlay */
+    .bm-overlay {
+        background: rgba(0, 0, 0, 0.3);
+    }
+
+    .tituloNavMovile {
+        font-family: 'Arima Madurai', cursive;
+        color: #14232A;
+        text-align: center;
+        font-size: 0.875rem;
     }
 }

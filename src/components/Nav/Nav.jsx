@@ -3,18 +3,20 @@ import "./style.css"
 import logoEspacioKlem from "../../assets/logo-espacio-klem.png"
 import { AnchorsContext } from "../../context/anchorsContext";
 
+import { slide as Menu } from 'react-burger-menu'
+import menuHamburguesa from "../../assets/Menu.png"
 
 const Nav = () => {
 
     const [allMyAnchors, setAllMyAnchors] = useState([])
 
     const navLinks = [
-        {name: "INICIO", href: "#home", id: "inicioLink" },
-        {name: "SERVICIOS", href: "#servicios", id: "serviciosLink" },
-        {name: "QUIÉNES SOMOS", href: "#quienesSomos", id: "quienesSomosLink"  },
-        {name: "PARA REGALAR", href: "#home", id: "paraRegalarLink"  },
-        {name: "PREGUNTAS FRECUENTES", href: "#home", id: "preguntasFrecuentesLink"  },
-        {name: "CONTACTO", href: "#home", id: "contactoLink"  },
+        { name: "INICIO", href: "#home", id: "inicioLink" },
+        { name: "SERVICIOS", href: "#servicios", id: "serviciosLink" },
+        { name: "QUIÉNES SOMOS", href: "#quienesSomos", id: "quienesSomosLink" },
+        { name: "PARA REGALAR", href: "#home", id: "paraRegalarLink" },
+        { name: "PREGUNTAS FRECUENTES", href: "#home", id: "preguntasFrecuentesLink" },
+        { name: "CONTACTO", href: "#home", id: "contactoLink" },
     ]
 
     const { allAnchors } = useContext(AnchorsContext)
@@ -24,7 +26,7 @@ const Nav = () => {
         entries.forEach((entry) => {
             if (entry.isIntersecting) {
                 console.log(entry.target.id)
-                switch (entry.target.id){
+                switch (entry.target.id) {
                     case "homeContainer": {
                         document.getElementById("inicioLink").classList.add("active");
                         document.getElementById("serviciosLink").classList.remove("active")
@@ -34,7 +36,7 @@ const Nav = () => {
                         document.getElementById("contactoLink").classList.remove("active")
                         break;
                     }
-                    
+
                     case "serviciosContainer": {
                         document.getElementById("inicioLink").classList.remove("active");
                         document.getElementById("serviciosLink").classList.add("active")
@@ -44,7 +46,7 @@ const Nav = () => {
                         document.getElementById("contactoLink").classList.remove("active")
                         break
                     }
-                    
+
                     case "quienesSomosContainer": {
                         document.getElementById("inicioLink").classList.remove("active");
                         document.getElementById("serviciosLink").classList.remove("active")
@@ -89,9 +91,9 @@ const Nav = () => {
                         document.getElementById("preguntasFrecuentesLink").classList.remove("active")
                         document.getElementById("contactoLink").classList.remove("active")
                         break;
-                    } 
+                    }
 
-                    
+
                 }
             }
         });
@@ -100,7 +102,7 @@ const Nav = () => {
         root: null,
         threshold: 0.25
     };
-    let observer = new IntersectionObserver(callback, options) ;
+    let observer = new IntersectionObserver(callback, options);
 
     useEffect(() => {
         setAllMyAnchors(allAnchors)
@@ -112,12 +114,21 @@ const Nav = () => {
 
     return (
         <>
+            <div className="navParaMovile">
+                <Menu customBurgerIcon={ <img src={menuHamburguesa} /> }>
+                    <a id="home" className="menu-item" href="/">Home</a>
+                    <a id="about" className="menu-item" href="/about">About</a>
+                    <a id="contact" className="menu-item" href="/contact">Contact</a>
+                </Menu >
+                <h1 className="tituloNavMovile">Espacio Klem</h1>
+
+            </div>
             <div className="logoEspacioKlem">
                 <img src={logoEspacioKlem} alt="Logo de Espacio Klem" />
 
             </div>
             <div className="navBar">
-                {navLinks.map((item,index) => {
+                {navLinks.map((item, index) => {
                     if (allMyAnchors.length > 0) {
                         const myAnchor = allMyAnchors.filter(anchor => anchor.name === item.name)[0]
                         if (myAnchor !== undefined) {
@@ -130,6 +141,11 @@ const Nav = () => {
                 <img src={logoEspacioKlem} alt="Logo de Espacio Klem" />
 
             </div>
+
+
+
+
+
         </>
     )
 }
