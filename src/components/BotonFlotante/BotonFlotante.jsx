@@ -8,7 +8,8 @@ const BotonFlotante = () => {
 
     return (
         <div className="botonFlotanteContainer">
-            <img src={botonFlotante} alt="" />
+
+            <a href=""><img src={botonFlotante} alt="" /></a>
 
         </div>
     )
