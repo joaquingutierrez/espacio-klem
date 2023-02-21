@@ -149,7 +149,6 @@ const Nav = () => {
                 <img src={logoEspacioKlem} alt="Logo de Espacio Klem" />
 
             </div>
-            <div id="navBarContainer">
                 <div className="navBar">
                     {navLinks.map((item, index) => {
                         if (allMyAnchors.length > 0) {
@@ -161,7 +160,6 @@ const Nav = () => {
                     })}
                 </div>
 
-            </div>
             <div className="logoEspacioKlemMovile">
                 <img src={logoEspacioKlem} alt="Logo de Espacio Klem" />
 
