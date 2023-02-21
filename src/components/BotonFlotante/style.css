@@ -1,0 +1,6 @@
+.botonFlotanteContainer {
+    position: fixed;
+    z-index: 40;
+    bottom: 40px;
+    right: 100px;
+}

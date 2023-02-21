@@ -10,6 +10,7 @@ import PreguntasFrecuentes from "./components/PreguntasFrecuentes/PreguntasFrecu
 import Contacto from "./components/Contacto/Contacto"
 import Footer from "./components/Footer/Footer"
 import AnchorsProvider from './context/anchorsContext';
+import ContactoFlotante from "./components/BotonFlotante/BotonFlotante"
 
 
 
@@ -35,6 +36,7 @@ function App() {
         <Footer />
       </AnchorsProvider>
 
+      <ContactoFlotante />
     </div>
   );
 }
