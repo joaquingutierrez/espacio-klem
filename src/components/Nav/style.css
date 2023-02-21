@@ -1,10 +1,10 @@
 #navBarContainer {
-    width: 100%;
+/*     width: 100%;
     background-color: #14232A;
     z-index: 16;
     margin: 36px auto;
     position: sticky;
-    top: 32px;
+    top: 32px; */
 }
 
 .navBar {
@@ -14,10 +14,10 @@
     justify-content: space-around;
     background-color: #14232A;
     width: 75%;
-/*     z-index: 16;
+    z-index: 16;
     margin: 36px auto;
     position: sticky;
-    top: 32px; */
+    top: 32px;
 }
 
 .navBarItem {
