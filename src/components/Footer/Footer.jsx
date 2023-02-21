@@ -39,9 +39,12 @@ const Footer = () => {
           <h3 className="subtituloFooter">Suscribite con tu email y enterarte.</h3>
         </div>
         <div className="inputFooterContainer">
-        <input className="inputPromocionesFooter" placeholder="Escribí tu email acá" type="text" />
-        <h3 className="botonSuscribirmeFooter">Suscribirme</h3>
+          <input className="inputPromocionesFooter" placeholder="Escribí tu email acá" type="text" />
+          <h3 className="botonSuscribirmeFooter">Suscribirme</h3>
         </div>
+      </div>
+      <div className="logoFooterContainerMovile">
+        <img src={logo} alt="" />
       </div>
       <div className="separacionFooter">
       </div>
