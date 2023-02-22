@@ -3,5 +3,4 @@ en 320px hay scroll a la derecha debido al logo de espacio klem
 seccion contacto en desktop tiene mucho padding hacias arriba y hacia abajo
 No funciona el active del nav en vercel
 Hacer las preguntas frecuentes con grid en lugar de flex
-Poner anchor en Para regalar
-Hacer para regalar responsive
+home se rompe en algunas resoluciones

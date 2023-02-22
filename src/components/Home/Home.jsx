@@ -1,6 +1,9 @@
 import React, { useContext, useEffect } from "react";
 import "./style.css"
-import imagen1 from "../../assets/pexels-castorly-stock-3654620.jpg"
+import imagen1 from "../../assets/fotos/home/frame1.png"
+import imagen2 from "../../assets/fotos/home/frame2.png"
+import imagen3 from "../../assets/fotos/home/frame3.png"
+import imagen4 from "../../assets/fotos/home/frame4.png"
 import Button from "../Button/Button";
 import { AnchorsContext } from "../../context/anchorsContext";
 
@@ -19,13 +22,13 @@ const Home = () => {
                     <img className="imagenHome" src={imagen1} alt="" />
                 </div>
                 <div className="imagen2HomeContainer">
-                    <img className="imagenHome" src={imagen1} alt="" />
+                    <img className="imagenHome" src={imagen2} alt="" />
                 </div>
                 <div className="imagen1HomeContainer">
-                    <img className="imagenHome" src={imagen1} alt="" />
+                    <img className="imagenHome" src={imagen3} alt="" />
                 </div>
                 <div className="imagen2HomeContainer">
-                    <img className="imagenHome" src={imagen1} alt="" />
+                    <img className="imagenHome" src={imagen4} alt="" />
                 </div>
             </div>
             <div>

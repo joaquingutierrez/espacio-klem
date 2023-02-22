@@ -34,11 +34,7 @@
     position: relative;
 }
 .imagenHome {
-    width: 570px;
-    height: 381px;
-    position: absolute;
-    left: -163px;
-    top: -2px;
+
 }
 
 @media (min-width:0) and (max-width:480px) {

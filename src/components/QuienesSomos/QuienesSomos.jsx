@@ -1,6 +1,7 @@
 import React, { useContext, useEffect } from "react";
 import "./style.css"
-import imagen from "../../assets/pexels-castorly-stock-3654620.jpg"
+import imagenQuienesSomos from "../../assets/fotos/quienesSomos/sobreNuestroEspacio.png"
+import imagenSobreNostros from "../../assets/fotos/quienesSomos/sobreNosotros.png"
 import { AnchorsContext } from "../../context/anchorsContext";
 
 const QuienesSomos = () => {
@@ -18,7 +19,7 @@ const QuienesSomos = () => {
             <h2 className="tituloQuienesSomos">Quiénes somos</h2>
             <div className="contenedorSobreNuestroEspacio">
                 <div className="contenedorImagenSobreNuestroEspacio">
-                    <img src={imagen} alt="" />
+                    <img src={imagenQuienesSomos} alt="" />
                 </div>
                 <div className="textoQuienesSomos">
                     <h3>Sobre nuestro espacio</h3>
@@ -35,7 +36,7 @@ const QuienesSomos = () => {
                     <p>Nuestro enfoque es proporcionar un servicio de calidad, centrado en la atención individual y el cuidado del cliente.</p>
                 </div>
                 <div className="contenedorImagenSobreNosotros">
-                    <img src={imagen} alt="" />
+                    <img src={imagenSobreNostros} alt="" />
                 </div>
             </div>
         </div>
