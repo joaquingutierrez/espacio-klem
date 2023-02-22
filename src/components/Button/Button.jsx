@@ -1,10 +1,10 @@
 import React from "react";
 import "./style.css"
 
-const Button = ({name}) => {
+const Button = ({name, color}) => {
     return (
         <div className="contenedorBotonHome">
-            <h2 className="botonHome">{name}</h2>
+            <h2 className={color !== "dark" ? "botonHome" : "botonHomeLight"}>{name}</h2>
         </div>
     )
 }

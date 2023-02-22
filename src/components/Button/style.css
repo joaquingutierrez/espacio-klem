@@ -1,5 +1,5 @@
 .contenedorBotonHome {
-    margin: auto;
+    /* margin: auto; */
     display: flex;
     justify-content: center;
 }
@@ -12,8 +12,24 @@
     border-radius: 50px;
     cursor: pointer;
     transition: 0.3s ease-in-out;
+    text-align: center;
 }
 .botonHome:hover {
     background-color: #DED8BE;
     color: #14232A;
+}
+.botonHomeLight{
+    font-size: 1rem;
+    padding: 10px;
+    font-family: 'Arima Madurai', cursive;
+    color: #14232A;
+    border: 1px solid #14232A;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    text-align: center;
+}
+.botonHomeLight:hover {
+    background-color: #14232A;
+    color: #DED8BE;
 }

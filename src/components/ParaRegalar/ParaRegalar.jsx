@@ -1,27 +1,29 @@
-import React, {useContext, useEffect} from 'react'
-import { AnchorsContext } from "../../context/anchorsContext";
+import React from 'react';
+import "./style.css";
+import Voucher1 from '../../assets/Voucher1.png';
+import Voucher2 from '../../assets/Voucher2.png';
+import Voucher3 from '../../assets/Voucher3.png';
+import Vouchers from '../../assets/Vouchers.png';
+import Button from "../Button/Button"
 
-const ParaRegalar = () => {
 
-  const { allAnchors } = useContext(AnchorsContext)
-
-  useEffect(() => {
-    const anchorParaRegalar = document.getElementById("paraRegalarContainer")
-    allAnchors.push({ name: "PARA REGALAR", anchor: anchorParaRegalar })
-}, [])
+function ParaRegalar() {
 
   return (
-
-    <div id="paraRegalarContainer" className="wrapper">
-      <a className="anchor" id="paraRegalar"></a>
-      <div className="one">One</div>
-      <div className="two">Two</div>
-      <div className="three">Three</div>
-      <div className="four">Four</div>
-      <div className="five">Five</div>
-      <div className="six">Six</div>
+    <>
+      <h2 className='tituloParaRegalar'>Para regalar</h2>
+    <div className="rectanguloParaRegalar">
+      <div className="textoRegalo">
+        <p>Regalá experiencias.
+          Tenemos variedad de vouchers con nuestros servicios. Regalá experiencias.
+        </p>
+      </div>
+      <div className='contenedorImagenesParaRegalar'>
+        <img src={Vouchers} alt="" />
+        <Button name="Regalar experiencia" color="dark" />
+      </div>
     </div>
-
+    </>
   )
 }
 

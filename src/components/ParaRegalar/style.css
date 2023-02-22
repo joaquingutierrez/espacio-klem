@@ -1,34 +1,75 @@
-#quienesSomosContainer {
-    width: 75%;
-    margin: auto;
-}
-.tituloQuienesSomos {
+.tituloParaRegalar {
     font-family: 'Arima Madurai', cursive;
     color: #DED8BE;
     font-size: 2.25rem;
     text-align: center;
 }
-.contenedorSobreNuestroEspacio {
-    display: flex;
+.rectanguloParaRegalar {
     width: 100%;
+    height: 352px;
+    background: #DED8BE;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
 }
-.contenedorImagenSobreNuestroEspacio {
-    width: 552px;
-    min-width: 552px;
-    height: 648px;
-    border-radius: 50% 50% 0 0;
-    overflow: hidden;
+
+.textoRegalo {
+    background: #DED8BE;
+    margin: 2rem auto 2rem 12.5%;
+    text-align: center;
+    width: 37.5%;
 }
-.textoSobreNuestroEspacio {
-    margin: auto 7%;
-    text-align: justify;
-}
-.textoSobreNuestroEspacio h3 {
-    font-family: 'Arima Madurai', cursive;
-    color: #DED8BE;
+
+.textoRegalo p {
     font-size: 2.25rem;
+    font-family: Arima Madurai;
+    font-weight: 800;
+    line-height: 48px;
+    letter-spacing: 0.025em;
+    text-align: center;
 }
-.textoSobreNuestroEspacio p {
-    font-family: 'Lato', sans-serif;
-    color: #DED8BE;
+
+.contenedorImagenesParaRegalar{
+    display: flex;
+    width: 37.5%;
+    align-items: center;
+    justify-content: end;
+    margin-right: 12.5%;
 }
+
+/* .cuadrado3 {
+    width: 156.77px;
+    height: 0.01px;
+    background: #DED8BE;
+    position: absolute;
+    left: 1803.01px;
+    top: 190.49px;
+    transform: rotate(350deg);
+
+}
+
+.cuadrado2 {
+    width: 0.52px;
+    height: 0px;
+    left: 1833.01px;
+    top: 121.075195px;
+    position: absolute;
+    border-radius: 0px;
+    background: #DED8BE;
+    transform: rotate(349deg);
+}
+
+.cuadrado {
+    width: 0px;
+    height: 291.92px;
+    left: 1803.01px;
+    top: 30.964844px;
+    position: absolute;
+    border-radius: 0px;
+    background: #7c6707;
+    background-position: center center;
+    background-size: cover;
+    transform: rotate(345deg);
+} */
