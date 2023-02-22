@@ -6,7 +6,6 @@
 }
 .rectanguloParaRegalar {
     width: 100%;
-    height: 352px;
     background: #DED8BE;
     position: relative;
     display: flex;
@@ -37,39 +36,41 @@
     align-items: center;
     justify-content: end;
     margin-right: 12.5%;
+    height: 377px;
+    overflow: hidden;
 }
 
-/* .cuadrado3 {
-    width: 156.77px;
-    height: 0.01px;
-    background: #DED8BE;
-    position: absolute;
-    left: 1803.01px;
-    top: 190.49px;
-    transform: rotate(350deg);
-
+@media (min-width: 1078px) and (max-width: 1200px) {
+    .contenedorImagenesParaRegalar {
+        margin-right: 10%;
+    }
+    .textoRegalo {
+        margin-left: 10%;
+        margin-right: 0;
+    }
+    .rectanguloParaRegalar {
+        gap: 20px;
+    }
 }
-
-.cuadrado2 {
-    width: 0.52px;
-    height: 0px;
-    left: 1833.01px;
-    top: 121.075195px;
-    position: absolute;
-    border-radius: 0px;
-    background: #DED8BE;
-    transform: rotate(349deg);
+@media (min-width: 0px) and (max-width: 1077px) {
+    .rectanguloParaRegalar {
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        gap: 0;
+    }
+    .contenedorImagenesParaRegalar {
+        flex-direction: column;
+        height: 100%;
+        width: 80%;
+        margin: auto;
+        overflow: auto;
+    }
+    .textoRegalo {
+        margin: auto;
+        width: 80%;
+    }
+    .textoRegalo p {
+        font-size: 1.8rem;
+    }
 }
-
-.cuadrado {
-    width: 0px;
-    height: 291.92px;
-    left: 1803.01px;
-    top: 30.964844px;
-    position: absolute;
-    border-radius: 0px;
-    background: #7c6707;
-    background-position: center center;
-    background-size: cover;
-    transform: rotate(345deg);
-} */

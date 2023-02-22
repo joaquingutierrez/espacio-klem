@@ -1,8 +1,5 @@
 import React from 'react';
 import "./style.css";
-import Voucher1 from '../../assets/Voucher1.png';
-import Voucher2 from '../../assets/Voucher2.png';
-import Voucher3 from '../../assets/Voucher3.png';
 import Vouchers from '../../assets/Vouchers.png';
 import Button from "../Button/Button"
 

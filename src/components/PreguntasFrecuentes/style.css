@@ -5,10 +5,14 @@
 
 .seccionPreguntas {
     display: flex;
-    align-items: center;
-    justify-content: space-around;
+    align-items: flex-start;
+    justify-content: space-between;
     gap: 40px;
 }
+.seccionPreguntas div {
+    width: 100%;
+}
+
 .logoMasPregunta {
     display: flex;
     align-items: center;
@@ -20,6 +24,7 @@
     color: #DED8BE;
     font-size: 2.25rem;
     text-align: center;
+    width: 100%;
 }
 
 .texto {
