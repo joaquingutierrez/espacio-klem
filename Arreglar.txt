@@ -1,3 +1,1 @@
-seccion contacto en desktop tiene mucho padding hacias arriba y hacia abajo *************
 home se rompe en algunas resoluciones
-Imagen Sobre nuestro espacio se rompe al cambiar de resolucion***************

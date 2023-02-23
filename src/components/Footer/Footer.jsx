@@ -51,8 +51,8 @@ const Footer = () => {
       <div className="finalFooter">
         <h3>© 2023 Espacio Klem </h3>
         <div className="redesSocialesFooter">
-          <img src={face} alt="" />
-          <img src={instagram} alt="" />
+          <a href="https://www.facebook.com/espacioklem" target="blank"><img src={face} alt="" /></a>
+          <a href="https://www.instagram.com/espacioklem/" target="blank"><img src={instagram} alt="" /></a>
         </div>
       </div>
     </footer>

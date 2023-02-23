@@ -18,8 +18,8 @@ function ParaRegalar() {
 
   return (
     <div id='paraRegalarContainer'>
-      <h2 className='tituloParaRegalar'>Para regalar</h2>
       <a className="anchor" id="paraRegalar"></a>
+      <h2 className='tituloParaRegalar'>Para regalar</h2>
       <a href=""></a>
       <div className="rectanguloParaRegalar">
         <div className="textoRegalo">
