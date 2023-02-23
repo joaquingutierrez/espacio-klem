@@ -2,5 +2,5 @@ NavBar desaparece en 573px
 en 320px hay scroll a la derecha debido al logo de espacio klem
 seccion contacto en desktop tiene mucho padding hacias arriba y hacia abajo
 No funciona el active del nav en vercel
-Hacer las preguntas frecuentes con grid en lugar de flex
 home se rompe en algunas resoluciones
+Imagen Sobre nuestro espacio se rompe al cambiar de resolucion
