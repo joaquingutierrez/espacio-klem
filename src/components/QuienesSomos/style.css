@@ -58,6 +58,9 @@
         min-width: 452px;
         height: 548px;
     }
+    .contenedorImagenSobreNuestroEspacio img {
+        width: 452px;
+    }
     .contenedorImagenSobreNosotros {
         width: 452px;
         min-width: 452px;
@@ -69,6 +72,9 @@
         width: 352px;
         min-width: 352px;
         height: 448px;
+    }
+    .contenedorImagenSobreNuestroEspacio img {
+        width: 352px;
     }
     .contenedorImagenSobreNosotros {
         width: 352px;
@@ -82,6 +88,9 @@
         min-width: 252px;
         height: 348px;
     }
+    .contenedorImagenSobreNuestroEspacio img {
+        width: 252px;
+    }
     .contenedorImagenSobreNosotros {
         width: 252px;
         min-width: 252px;
@@ -93,6 +102,9 @@
         width: 300px;
         min-width: 300px;
         height: 396px;
+    }
+    .contenedorImagenSobreNuestroEspacio img {
+        width: 300px;
     }
     .contenedorImagenSobreNosotros {
         width: 300px;
