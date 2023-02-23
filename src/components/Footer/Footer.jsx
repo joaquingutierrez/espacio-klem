@@ -16,7 +16,7 @@ const Footer = () => {
     <footer className="footerContainer">
       <div className="footer">
         <div className="logoFooterContainer">
-          <img src={logo} alt="" />
+          <img src={logo} alt="Logo de Espacio Klem" />
         </div>
         <div className="menuFooterContainer">
           <h2 className="tituloFooter">MENU</h2>
@@ -51,8 +51,8 @@ const Footer = () => {
       <div className="finalFooter">
         <h3>© 2023 Espacio Klem </h3>
         <div className="redesSocialesFooter">
-          <a href="https://www.facebook.com/espacioklem" target="blank"><img src={face} alt="" /></a>
-          <a href="https://www.instagram.com/espacioklem/" target="blank"><img src={instagram} alt="" /></a>
+          <a href="https://www.facebook.com/espacioklem" target="blank"><img src={face} alt="Logo de Facebook" /></a>
+          <a href="https://www.instagram.com/espacioklem/" target="blank"><img src={instagram} alt="Logo de Instagram" /></a>
         </div>
       </div>
     </footer>

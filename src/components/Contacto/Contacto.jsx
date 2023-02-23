@@ -23,20 +23,20 @@ function Contacto() {
       <div className="rectanguloContacto">
         <div className='contenidoDeContacto'>
           <div className='imagenContacto'>
-            <img src={imagenMapa} alt="" />
+            <img src={imagenMapa} alt="Imagen de un mapa con la ubicacion aproximada de Espacio Klem" />
           </div>
           <div className='cuerpoContacto'>
             <h3 className="tituloUbicacion">Sede Bella Vista</h3>
             <div className="logoYTextoflex">
-              <img src={clockLogo} alt="" />
+              <img src={clockLogo} alt="Logo de un reloj" />
               <p className="horarioContacto">Horario: todos los días de 8 a 20 hs</p>
             </div>
             <div className="logoYTextoflex">
-              <img src={whatsappLogo} alt="" />
+              <img src={whatsappLogo} alt="Logo de whatsapp" />
               <p className="WhatsappContacto"> Whatsapp: +54 11 6985-3215</p>
             </div>
             <div className="logoYTextoflex">
-              <img src={envelopeLogo} alt="" />
+              <img src={envelopeLogo} alt="Logo de una carta" />
               <p className="EmailContacto">Email: espacioklem@gmail.com</p>
             </div>
             <p className="asistenciaContacto"> La asistencia es únicamente con turno.</p>

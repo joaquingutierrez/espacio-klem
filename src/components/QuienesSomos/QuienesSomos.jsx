@@ -19,7 +19,7 @@ const QuienesSomos = () => {
             <h2 className="tituloQuienesSomos">Quiénes somos</h2>
             <div className="contenedorSobreNuestroEspacio">
                 <div className="contenedorImagenSobreNuestroEspacio">
-                    <img src={imagenQuienesSomos} alt="" />
+                    <img src={imagenQuienesSomos} alt="Imagen de una cama para hacer masajes" />
                 </div>
                 <div className="textoQuienesSomos">
                     <h3>Sobre nuestro espacio</h3>
@@ -36,7 +36,7 @@ const QuienesSomos = () => {
                     <p>Nuestro enfoque es proporcionar un servicio de calidad, centrado en la atención individual y el cuidado del cliente.</p>
                 </div>
                 <div className="contenedorImagenSobreNosotros">
-                    <img src={imagenSobreNostros} alt="" />
+                    <img src={imagenSobreNostros} alt="Imagen de una repisa con vouchers encima, una taza y un mapa" />
                 </div>
             </div>
         </div>

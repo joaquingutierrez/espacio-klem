@@ -19,16 +19,16 @@ const Home = () => {
             <a className="anchor" id="home"></a>
             <div className="contenedorImagenesHome displayNoneHomeMovile">
                 <div className="imagen1HomeContainer">
-                    <img className="imagenHome" src={imagen1} alt="" />
+                    <img className="imagenHome" src={imagen1} alt="Imagen de una vela" />
                 </div>
                 <div className="imagen2HomeContainer">
-                    <img className="imagenHome" src={imagen2} alt="" />
+                    <img className="imagenHome" src={imagen2} alt="Imagen de alguien dando un masaje" />
                 </div>
                 <div className="imagen1HomeContainer">
-                    <img className="imagenHome" src={imagen3} alt="" />
+                    <img className="imagenHome" src={imagen3} alt="Imagen de una repisa" />
                 </div>
                 <div className="imagen2HomeContainer">
-                    <img className="imagenHome" src={imagen4} alt="" />
+                    <img className="imagenHome" src={imagen4} alt="Imagen de lifting de pestañas" />
                 </div>
             </div>
             <div>

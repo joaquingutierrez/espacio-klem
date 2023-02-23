@@ -20,7 +20,6 @@ function ParaRegalar() {
     <div id='paraRegalarContainer'>
       <a className="anchor" id="paraRegalar"></a>
       <h2 className='tituloParaRegalar'>Para regalar</h2>
-      <a href=""></a>
       <div className="rectanguloParaRegalar">
         <div className="textoRegalo">
           <p>Regalá experiencias.
@@ -28,7 +27,7 @@ function ParaRegalar() {
           </p>
         </div>
         <div className='contenedorImagenesParaRegalar'>
-          <img src={Vouchers} alt="" />
+          <img src={Vouchers} alt="Imagen de distintos vouchers" />
           <Button name="Regalar experiencia" color="dark" />
         </div>
       </div>

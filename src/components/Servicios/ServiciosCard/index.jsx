@@ -7,7 +7,7 @@ const ServiciosCards = ({ card }) => {
     return (
         <div className="contenedorCard">
             <div className="contenedorImagenCard">
-                <img src={card.imagen} alt="" />
+                <img src={card.imagen} alt={card.descripcionImagen} />
             </div>
             <h3 className="tituloCard">{card.titulo}</h3>
             <p className="parrafoCard">{card.parrafo}</p>
