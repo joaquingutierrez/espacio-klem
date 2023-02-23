@@ -33,16 +33,6 @@ const Footer = () => {
           <h3 className="subtituloFooter"><a className="linksFooter" href="">Política de privacidad</a></h3>
         </div>
       </div>
-      <div className="promocionesContainer">
-        <div>
-          <h3 className="subtituloFooter">¿Querés recibir novedades y promociones?</h3>
-          <h3 className="subtituloFooter">Suscribite con tu email y enterarte.</h3>
-        </div>
-        <div className="inputFooterContainer">
-          <input className="inputPromocionesFooter" placeholder="Escribí tu email acá" type="text" />
-          <h3 className="botonSuscribirmeFooter">Suscribirme</h3>
-        </div>
-      </div>
       <div className="logoFooterContainerMovile">
         <img src={logo} alt="" />
       </div>

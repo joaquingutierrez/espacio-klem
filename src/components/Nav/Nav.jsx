@@ -155,9 +155,9 @@ const Nav = () => {
                     if (allMyAnchors.length > 0) {
                         const myAnchor = allMyAnchors.filter(anchor => anchor.name === item.name)[0]
                         if (myAnchor !== undefined) {
+                            return <h2 key={index} className="navBarItem"><a id={item.id} className="navBarLink" href={item.href}>{item.name}</a></h2>
                         }
                     }
-                    return <h2 key={index} className="navBarItem"><a id={item.id} className="navBarLink" href={item.href}>{item.name}</a></h2>
                 })}
             </div>
 
