@@ -33,9 +33,6 @@
     overflow: hidden;
     position: relative;
 }
-.imagenHome {
-
-}
 
 @media (min-width:0) and (max-width:480px) {
     .displayNoneHomeMovile {

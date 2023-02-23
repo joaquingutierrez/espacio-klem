@@ -93,6 +93,7 @@
     .logoEspacioKlemMovile img {
         width: 320px;
         height: 281px;
+        margin: 0;
     }
 
     .navBar {
