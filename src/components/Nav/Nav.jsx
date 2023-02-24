@@ -24,90 +24,91 @@ const Nav = () => {
 
     const { allAnchors } = useContext(AnchorsContext)
 
-
-    const callback = function (entries) {
-        entries.forEach((entry) => {
-            console.log(entry.target.id);
-            if (entry.isIntersecting) {
-                switch (entry.target.id) {
-                    case "homeContainer": {
-                        document.getElementById("inicioLink").classList.add("active");
-                        document.getElementById("serviciosLink").classList.remove("active")
-                        document.getElementById("quienesSomosLink").classList.remove("active")
-                        document.getElementById("paraRegalarLink").classList.remove("active")
-                        document.getElementById("preguntasFrecuentesLink").classList.remove("active")
-                        document.getElementById("contactoLink").classList.remove("active")
-                        break;
-                    }
-
-                    case "serviciosContainer": {
-                        document.getElementById("inicioLink").classList.remove("active");
-                        document.getElementById("serviciosLink").classList.add("active")
-                        document.getElementById("quienesSomosLink").classList.remove("active")
-                        document.getElementById("paraRegalarLink").classList.remove("active")
-                        document.getElementById("preguntasFrecuentesLink").classList.remove("active")
-                        document.getElementById("contactoLink").classList.remove("active")
-                        break
-                    }
-
-                    case "quienesSomosContainer": {
-                        document.getElementById("inicioLink").classList.remove("active");
-                        document.getElementById("serviciosLink").classList.remove("active")
-                        document.getElementById("quienesSomosLink").classList.add("active")
-                        document.getElementById("paraRegalarLink").classList.remove("active")
-                        document.getElementById("preguntasFrecuentesLink").classList.remove("active")
-                        document.getElementById("contactoLink").classList.remove("active")
-                        break
-                    }
-                    case "paraRegalarContainer": {
-                        document.getElementById("inicioLink").classList.remove("active");
-                        document.getElementById("serviciosLink").classList.remove("active")
-                        document.getElementById("quienesSomosLink").classList.remove("active")
-                        document.getElementById("paraRegalarLink").classList.add("active")
-                        document.getElementById("preguntasFrecuentesLink").classList.remove("active")
-                        document.getElementById("contactoLink").classList.remove("active")
-                        break
-                    }
-                    case "preguntasFrecuentesContainer": {
-                        document.getElementById("inicioLink").classList.remove("active");
-                        document.getElementById("serviciosLink").classList.remove("active")
-                        document.getElementById("quienesSomosLink").classList.remove("active")
-                        document.getElementById("paraRegalarLink").classList.remove("active")
-                        document.getElementById("preguntasFrecuentesLink").classList.add("active")
-                        document.getElementById("contactoLink").classList.remove("active")
-                        break
-                    }
-                    case "contactoContainer": {
-                        document.getElementById("inicioLink").classList.remove("active");
-                        document.getElementById("serviciosLink").classList.remove("active")
-                        document.getElementById("quienesSomosLink").classList.remove("active")
-                        document.getElementById("paraRegalarLink").classList.remove("active")
-                        document.getElementById("preguntasFrecuentesLink").classList.remove("active")
-                        document.getElementById("contactoLink").classList.add("active")
-                        break
-                    }
-                    default: {
-                        document.getElementById("inicioLink").classList.add("active");
-                        document.getElementById("serviciosLink").classList.remove("active")
-                        document.getElementById("quienesSomosLink").classList.remove("active")
-                        document.getElementById("paraRegalarLink").classList.remove("active")
-                        document.getElementById("preguntasFrecuentesLink").classList.remove("active")
-                        document.getElementById("contactoLink").classList.remove("active")
-                        break;
-                    }
-
-
-                }
-            }
-        });
-    }
-    const options = {
-        root: null,
-        threshold: 0.1
-    };
-    let observer = new IntersectionObserver(callback, options);
-
+    
     useEffect(() => {
+
+        const callback = function (entries) {
+            entries.forEach((entry) => {
+                console.log(entry.target.id);
+                if (entry.isIntersecting) {
+                    switch (entry.target.id) {
+                        case "homeContainer": {
+                            document.getElementById("inicioLink").classList.add("active");
+                            document.getElementById("serviciosLink").classList.remove("active")
+                            document.getElementById("quienesSomosLink").classList.remove("active")
+                            document.getElementById("paraRegalarLink").classList.remove("active")
+                            document.getElementById("preguntasFrecuentesLink").classList.remove("active")
+                            document.getElementById("contactoLink").classList.remove("active")
+                            break;
+                        }
+    
+                        case "serviciosContainer": {
+                            document.getElementById("inicioLink").classList.remove("active");
+                            document.getElementById("serviciosLink").classList.add("active")
+                            document.getElementById("quienesSomosLink").classList.remove("active")
+                            document.getElementById("paraRegalarLink").classList.remove("active")
+                            document.getElementById("preguntasFrecuentesLink").classList.remove("active")
+                            document.getElementById("contactoLink").classList.remove("active")
+                            break
+                        }
+    
+                        case "quienesSomosContainer": {
+                            document.getElementById("inicioLink").classList.remove("active");
+                            document.getElementById("serviciosLink").classList.remove("active")
+                            document.getElementById("quienesSomosLink").classList.add("active")
+                            document.getElementById("paraRegalarLink").classList.remove("active")
+                            document.getElementById("preguntasFrecuentesLink").classList.remove("active")
+                            document.getElementById("contactoLink").classList.remove("active")
+                            break
+                        }
+                        case "paraRegalarContainer": {
+                            document.getElementById("inicioLink").classList.remove("active");
+                            document.getElementById("serviciosLink").classList.remove("active")
+                            document.getElementById("quienesSomosLink").classList.remove("active")
+                            document.getElementById("paraRegalarLink").classList.add("active")
+                            document.getElementById("preguntasFrecuentesLink").classList.remove("active")
+                            document.getElementById("contactoLink").classList.remove("active")
+                            break
+                        }
+                        case "preguntasFrecuentesContainer": {
+                            document.getElementById("inicioLink").classList.remove("active");
+                            document.getElementById("serviciosLink").classList.remove("active")
+                            document.getElementById("quienesSomosLink").classList.remove("active")
+                            document.getElementById("paraRegalarLink").classList.remove("active")
+                            document.getElementById("preguntasFrecuentesLink").classList.add("active")
+                            document.getElementById("contactoLink").classList.remove("active")
+                            break
+                        }
+                        case "contactoContainer": {
+                            document.getElementById("inicioLink").classList.remove("active");
+                            document.getElementById("serviciosLink").classList.remove("active")
+                            document.getElementById("quienesSomosLink").classList.remove("active")
+                            document.getElementById("paraRegalarLink").classList.remove("active")
+                            document.getElementById("preguntasFrecuentesLink").classList.remove("active")
+                            document.getElementById("contactoLink").classList.add("active")
+                            break
+                        }
+                        default: {
+                            document.getElementById("inicioLink").classList.add("active");
+                            document.getElementById("serviciosLink").classList.remove("active")
+                            document.getElementById("quienesSomosLink").classList.remove("active")
+                            document.getElementById("paraRegalarLink").classList.remove("active")
+                            document.getElementById("preguntasFrecuentesLink").classList.remove("active")
+                            document.getElementById("contactoLink").classList.remove("active")
+                            break;
+                        }
+    
+    
+                    }
+                }
+            });
+        }
+        const options = {
+            root: null,
+            threshold: 0.25
+        };
+
+        let observer = new IntersectionObserver(callback, options);
         setAllMyAnchors(allAnchors)
         allAnchors.map(element => {
             return observer.observe(element.anchor)
