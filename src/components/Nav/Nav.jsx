@@ -102,8 +102,8 @@ const Nav = () => {
         });
     }
     const options = {
-        root: null,
-        threshold: 0.5
+        /* root: null, */
+        threshold: 0.1
     };
     let observer = new IntersectionObserver(callback, options);
 
