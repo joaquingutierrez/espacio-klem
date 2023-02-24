@@ -13,7 +13,7 @@ const Home = () => {
     useEffect(() => {
         const anchorHome = document.getElementById("homeContainer")
         allAnchors.push({name:"INICIO", anchor: anchorHome})
-    }, [])
+    }, [allAnchors])
     return (
         <div id="homeContainer">
             <a className="anchor" id="home"></a>

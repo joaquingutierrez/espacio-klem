@@ -11,7 +11,7 @@ const QuienesSomos = () => {
     useEffect(() => {
         const anchorQuienesSomos = document.getElementById("quienesSomosContainer")
         allAnchors.push({ name: "QUIÉNES SOMOS", anchor: anchorQuienesSomos })
-    }, [])
+    }, [allAnchors])
 
     return (
         <div id="quienesSomosContainer">

@@ -13,7 +13,7 @@ function Contacto() {
   useEffect(() => {
     const anchorContacto = document.getElementById("contactoContainer")
     allAnchors.push({ name: "CONTACTO", anchor: anchorContacto })
-  }, [])
+  }, [allAnchors])
 
 
   return (

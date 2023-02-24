@@ -16,7 +16,7 @@ const Servicios = () => {
     useEffect(() => {
         const anchorServicios = document.getElementById("serviciosContainer")
         allAnchors.push({name:"SERVICIOS", anchor: anchorServicios})
-    }, [])
+    }, [allAnchors])
 
     const card1 = {
         imagen: imagenMasajesRelajantes,

@@ -12,7 +12,7 @@ function ParaRegalar() {
   useEffect(() => {
     const anchorParaRegalar = document.getElementById("paraRegalarContainer")
     allAnchors.push({ name: "PARA REGALAR", anchor: anchorParaRegalar })
-  }, [])
+  }, [allAnchors])
 
 
 

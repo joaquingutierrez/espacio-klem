@@ -11,7 +11,7 @@ function PreguntasFrecuentes() {
   useEffect(() => {
     const anchorPreguntasFrecuentes = document.getElementById("preguntasFrecuentesContainer")
     allAnchors.push({ name: "PREGUNTAS FRECUENTES", anchor: anchorPreguntasFrecuentes })
-  }, [])
+  }, [allAnchors])
 
   return (
     <div id="preguntasFrecuentesContainer">
