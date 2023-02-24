@@ -1,1 +1,9 @@
-home se rompe en algunas resoluciones
+Cambiar parrafo Preguntas frecuentes Que productos utilizan en las sesiones de masajes
+
+padding botonHome 10px 24px
+
+Arreglar imagen de los vouchers, para que este mas centrada
+
+Quitar el justificado a los textos
+
+version movile aumentar padding en secciones claras

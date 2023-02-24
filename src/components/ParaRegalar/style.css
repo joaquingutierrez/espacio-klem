@@ -28,16 +28,18 @@
     line-height: 48px;
     letter-spacing: 0.025em;
     text-align: center;
+    margin: 0;
 }
 
 .contenedorImagenesParaRegalar{
     display: flex;
     width: 37.5%;
     align-items: center;
-    justify-content: end;
+    justify-content:space-between;
     margin-right: 12.5%;
     height: 377px;
     overflow: hidden;
+    padding-left: 5%;
 }
 
 @media (min-width: 1078px) and (max-width: 1200px) {

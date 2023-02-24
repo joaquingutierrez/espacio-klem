@@ -1,4 +1,4 @@
-import React, {useContext, useEffect} from 'react';
+import React, { useContext, useEffect } from 'react';
 import "./style.css";
 import Vouchers from '../../assets/Vouchers.png';
 import Button from "../Button/Button"
@@ -22,9 +22,8 @@ function ParaRegalar() {
       <h2 className='tituloParaRegalar'>Para regalar</h2>
       <div className="rectanguloParaRegalar">
         <div className="textoRegalo">
-          <p>Regalá experiencias.
-            Tenemos variedad de vouchers con nuestros servicios. Regalá experiencias.
-          </p>
+          <p>Regalá experiencias.</p>
+          <p>Tenemos variedad de vouchers con nuestros servicios.</p>
         </div>
         <div className='contenedorImagenesParaRegalar'>
           <img src={Vouchers} alt="Imagen de distintos vouchers" />
