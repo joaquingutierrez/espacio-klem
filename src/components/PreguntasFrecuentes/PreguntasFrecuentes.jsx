@@ -32,7 +32,7 @@ function PreguntasFrecuentes() {
             <img src={preguntaLogo} alt="" />
             <h3 className="tituloPregunta">¿Qué productos utilizan en las sesiones de masajes?</h3>
           </div>
-          <p className="texto">Los productos que se utilizan en las sesiones de masajes dependen de los objetivos buscados y tipo de masaje. Los aceites esenciales se utilizan por a sus propiedades curativas y relajantes. Otros productos que se pueden utilizar son cremas y geles, envolturas calientes o frías, toallas térmicas y almohadas para masajes.</p>
+          <p className="texto">Utilizamos productos Libra. La crema tiene una textura más densa. ideal para trabajar áreas específicas del cuerpo como hombros, cuello y pies. Se absorbe rápidamente, sin dejar la piel demasiado grasosa. El aceite es ideal para trabajar grandes áreas del cuerpo como espalda y piernas. Tiene un efecto hidratante, e ingredientes nutritivos y relajantes como aceites esenciales.</p>
         </div>
       </div>
 

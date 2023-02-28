@@ -12,6 +12,7 @@
     align-items: center;
     justify-content: center;
     gap: 50px;
+    /* padding: 50px 0; */
 }
 
 .textoRegalo {
@@ -33,10 +34,10 @@
 
 .contenedorImagenesParaRegalar{
     display: flex;
-    width: 37.5%;
+    width: 50%;
     align-items: center;
     justify-content:space-between;
-    margin-right: 12.5%;
+    margin-right: 10%;
     height: 377px;
     overflow: hidden;
     padding-left: 5%;
@@ -60,6 +61,7 @@
         align-items: center;
         margin: 0;
         gap: 0;
+        padding: 50px 0;
     }
     .contenedorImagenesParaRegalar {
         flex-direction: column;

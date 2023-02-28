@@ -5,7 +5,7 @@
 }
 .botonHome {
     font-size: 1rem;
-    padding: 10px;
+    padding: 10px 24px;
     font-family: 'Arima Madurai', cursive;
     color: #DED8BE;
     border: 1px solid #DED8BE;
@@ -20,7 +20,7 @@
 }
 .botonHomeLight{
     font-size: 1rem;
-    padding: 10px;
+    padding: 10px 24px;
     font-family: 'Arima Madurai', cursive;
     color:  #DED8BE;
     /* border: 1px solid #14232A; */

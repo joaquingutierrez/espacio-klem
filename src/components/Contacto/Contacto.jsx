@@ -33,11 +33,11 @@ function Contacto() {
             </div>
             <div className="logoYTextoflex">
               <img src={whatsappLogo} alt="Logo de whatsapp" />
-              <p className="WhatsappContacto"> Whatsapp: +54 11 6985-3215</p>
+              <p className="WhatsappContacto"> Whatsapp: <a className='linkEspacioKlem' href="https://api.whatsapp.com/send?phone=5491169853215" target="_blank" rel="noopener noreferrer">+54 11 6985-3215</a></p>
             </div>
             <div className="logoYTextoflex">
               <img src={envelopeLogo} alt="Logo de una carta" />
-              <p className="EmailContacto">Email: espacioklem@gmail.com</p>
+              <p className="EmailContacto">Email: <a className='linkEspacioKlem' href="mailto:espacioklem@gmail.com">espacioklem@gmail.com</a></p>
             </div>
             <p className="asistenciaContacto"> La asistencia es únicamente con turno.</p>
             <p className="asistenciaContacto">En caso de querer cancelar el turno, por favor, avisanos con anticipación.</p>
