@@ -1,5 +1,0 @@
-No entendí dónde va el botón flotante
-
-Arreglar Encabezado parte derecha (Cambiar texto e ícono)
-
-Arreglar menu hamburguesa (Agregar iconos redes sociales y texto)

@@ -108,6 +108,7 @@
         width: 320px;
         height: 281px;
         margin: 0;
+        margin-top: 64px;
     }
 
     .navBar {
@@ -139,12 +140,13 @@
     /* Position and sizing of burger button */
     .bm-burger-button {
         position: absolute;
-        height: 80%;
+        /* height: 24px; */
         top: 0;
         left: 0;
         bottom: 0;
         margin: auto;
         margin-left: 10px;
+        margin: 16px;
     }
 
     /* Color/shape of burger icon bars */
@@ -161,11 +163,12 @@
     .bm-cross-button {
         height: 24px;
         width: 24px;
+        margin-right: 24px;
     }
 
     /* Color/shape of close button cross */
     .bm-cross {
-        background: black;
+        background: #14232A;
     }
 
     /*
