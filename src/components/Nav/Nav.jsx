@@ -150,10 +150,10 @@ const Nav = () => {
                         return <h2 onClick={() => closeMenu()} key={index} className="navBarItem menu-item"><a id={item.id + "menuHamburguesa"} className="navBarLink" href={item.href}>{item.name}</a></h2>
                     })}
                     <div className="navIconosRedes">
-                        <a href="https://www.facebook.com/espacioklem"><img src={facebookNavLogo} alt="" /></a>
-                        <a href="https://www.instagram.com/espacioklem/"><img src={instagramNavLogo} alt="" /></a>
-                        <a href="https://api.whatsapp.com/send?phone=5491169853215"><img src={whatsappNavLogo} alt="" /></a>
-                        <a href="mailto:espacioklem@gmail.com"><img src={correoNavLogo} alt="" /></a>
+                        <a href="https://www.facebook.com/espacioklem" target="_blank"><img src={facebookNavLogo} alt="" /></a>
+                        <a href="https://www.instagram.com/espacioklem/" target="_blank"><img src={instagramNavLogo} alt="" /></a>
+                        <a href="https://api.whatsapp.com/send?phone=5491169853215" target="_blank"><img src={whatsappNavLogo} alt="" /></a>
+                        <a href="mailto:espacioklem@gmail.com" target="_blank"><img src={correoNavLogo} alt="" /></a>
                     </div>
                     <div className="contenedorFlexMovileNav">
                         <img src={logoUbicacion} alt="" />

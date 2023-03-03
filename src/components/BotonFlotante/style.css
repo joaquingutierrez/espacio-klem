@@ -1,8 +1,8 @@
 .botonFlotanteContainer {
     position: fixed;
     z-index: 40;
-    bottom: 40px;
-    right: 20px;
+    bottom: 16px;
+    right: 112px;
 }
 
 @media (min-width: 745px) and (max-width: 1184px) {
