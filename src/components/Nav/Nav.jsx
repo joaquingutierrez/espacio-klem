@@ -2,6 +2,12 @@ import React, { useContext, useEffect, useState } from "react";
 import "./style.css"
 import logoEspacioKlem from "../../assets/logo-espacio-klem.png"
 import { AnchorsContext } from "../../context/anchorsContext";
+import facebookNavLogo from "../../assets/Facebook-nav.png"
+import instagramNavLogo from "../../assets/Instagram-nav.png"
+import whatsappNavLogo from "../../assets/WhatsApp-nav.png"
+import correoNavLogo from "../../assets/Envelope-nav.png"
+import logoUbicacion from "../../assets/Place-Marker.png"
+import logoReloj from "../../assets/Clock.png"
 
 import { slide as Menu } from 'react-burger-menu'
 import menuHamburguesa from "../../assets/Menu.png"
@@ -24,7 +30,7 @@ const Nav = () => {
 
     const { allAnchors } = useContext(AnchorsContext)
 
-    
+
     useEffect(() => {
 
         const callback = function (entries) {
@@ -41,7 +47,7 @@ const Nav = () => {
                             document.getElementById("contactoLink").classList.remove("active")
                             break;
                         }
-    
+
                         case "serviciosContainer": {
                             document.getElementById("inicioLink").classList.remove("active");
                             document.getElementById("serviciosLink").classList.add("active")
@@ -51,7 +57,7 @@ const Nav = () => {
                             document.getElementById("contactoLink").classList.remove("active")
                             break
                         }
-    
+
                         case "quienesSomosContainer": {
                             document.getElementById("inicioLink").classList.remove("active");
                             document.getElementById("serviciosLink").classList.remove("active")
@@ -97,8 +103,8 @@ const Nav = () => {
                             document.getElementById("contactoLink").classList.remove("active")
                             break;
                         }
-    
-    
+
+
                     }
                 }
             });
@@ -143,6 +149,20 @@ const Nav = () => {
                     {navLinks.map((item, index) => {
                         return <h2 onClick={() => closeMenu()} key={index} className="navBarItem menu-item"><a id={item.id + "menuHamburguesa"} className="navBarLink" href={item.href}>{item.name}</a></h2>
                     })}
+                    <div className="navIconosRedes">
+                        <a href="https://www.facebook.com/espacioklem"><img src={facebookNavLogo} alt="" /></a>
+                        <a href="https://www.instagram.com/espacioklem/"><img src={instagramNavLogo} alt="" /></a>
+                        <a href="https://api.whatsapp.com/send?phone=5491169853215"><img src={whatsappNavLogo} alt="" /></a>
+                        <a href="mailto:espacioklem@gmail.com"><img src={correoNavLogo} alt="" /></a>
+                    </div>
+                    <div className="contenedorFlexMovileNav">
+                        <img src={logoUbicacion} alt="" />
+                        <p>Sede Bella Vista, Pcia. de Buenos Aires</p>
+                    </div>
+                    <div className="contenedorFlexMovileNav">
+                        <img src={logoReloj} alt="" />
+                        <p>Todos los días de 8hs a 20hs</p>
+                    </div>
                 </Menu >
                 <h1 className="tituloNavMovile">Espacio Klem</h1>
 

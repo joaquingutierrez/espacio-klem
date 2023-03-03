@@ -1,6 +1,7 @@
 import React from "react";
 import "./style.css"
 import logoUbicacion from "../../assets/Place-Marker.png"
+import logoReloj from "../../assets/Clock.png"
 
 const Encabezado = () => {
 
@@ -14,8 +15,8 @@ const Encabezado = () => {
                 <h2 className="tituloEncabezado">Espacio Klem</h2>
             </div>
             <div className="ubicacionContenedor displayNoneEncabezadoMovile">
-                <img src={logoUbicacion} alt="Logo que indica ubicacion" />
-                <p className="parrafoEncabezado">Sede Bella Vista, Pcia. de Buenos Aires</p>
+                <img src={logoReloj} alt="Logo que indica ubicacion" />
+                <p className="parrafoEncabezado">Todos los días de 8hs a 20hs</p>
             </div>
         </div>
     )
