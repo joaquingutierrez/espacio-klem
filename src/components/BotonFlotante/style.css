@@ -4,3 +4,16 @@
     bottom: 40px;
     right: 20px;
 }
+
+@media (min-width: 745px) and (max-width: 1184px) {
+    .botonFlotanteContainer {
+        bottom: 16px;
+        right: 24px;
+    }
+}
+@media (max-width: 744px) {
+    .botonFlotanteContainer {
+        bottom: 16px;
+        right: 16px;
+    }
+}

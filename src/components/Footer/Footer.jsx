@@ -33,9 +33,9 @@ const Footer = () => {
           <h3 className="subtituloFooter"><a className="linksFooter" href="">Política de privacidad</a></h3>
         </div>
       </div>
-      <div className="logoFooterContainerMovile">
+{      <div className="logoFooterContainerMovile">
         <img src={logo} alt="" />
-      </div>
+      </div>}
       <div className="separacionFooter">
       </div>
       <div className="finalFooter">

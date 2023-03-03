@@ -97,7 +97,7 @@
         height: 116px;
     }
 }
-@media (min-width:0) and (max-width:839px) {
+@media (min-width:0) and (max-width:896px) {
     .contenedorImagenSobreNuestroEspacio {
         width: 300px;
         min-width: 300px;
