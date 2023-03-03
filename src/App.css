@@ -57,9 +57,9 @@ body {
   top: -130px;
 }
 
-@media (max-width: 573px) {
+@media (max-width: 1184px) {
   .anchor {
-    top: -80px;
+    top: -76px;
   }
 }
 
