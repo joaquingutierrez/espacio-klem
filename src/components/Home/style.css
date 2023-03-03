@@ -39,14 +39,7 @@
     position: relative;
 }
 
-@media (min-width:701px) and (max-width:1071px) {
-    .contenedorImagenesHome {
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 10px;
-    }
-}
-@media (min-width:0) and (max-width:700px) {
+@media (min-width:0) and (max-width:1184px) {
     .displayNoneHomeMovile {
         display: none;
     }
