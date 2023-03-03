@@ -37,13 +37,13 @@ const Servicios = () => {
         parrafo: "Arqueamos y levantamos tus propias pestañas, creando un efecto abanico súper natural, utilizando productos nutritivos para favorecer su crecimiento. Siguiendo los cuidados y recomendaciones, el efecto lifting puede durar de 4 a 8 semanas."
     }
     const card4 = {
-        imagen: imagenLaminadoDeCejas,
+        imagen: imagenDiseñoYPerfiladoDeCejas,
         descripcionImagen: "Imagen de alguien haciendole un perfilado de cejas a otra persona",
         titulo: "Diseño y perfilado de cejas",
         parrafo: "El perfilado de cejas es un procedimiento de belleza que tiene como objetivo dar forma y definición a las cejas, resaltando la estructura natural de la cara y mejorando la apariencia estética de las cejas. El proceso de perfilado de cejas implica la eliminación cuidadosa de los vellos no deseados para crear una forma simétrica y armoniosa."
     }
     const card5 = {
-        imagen: imagenDiseñoYPerfiladoDeCejas,
+        imagen: imagenLaminadoDeCejas,
         descripcionImagen: "Imagen de alguien haciendole un laminado de cejas a otra persona",
         titulo: "Laminado de cejas",
         parrafo: "Consiste en aplicar un líquido que suaviza los vellos y los peina en una dirección específica. El resultado es una apariencia más pulida y definida de las cejas. Este tratamiento no es permanente, puede durar hasta 6 semanas, dependiendo del tipo de cabello y del cuidado posterior."

@@ -1,7 +1,8 @@
 .contenedorBotonHome {
-    /* margin: auto; */
     display: flex;
     justify-content: center;
+    width: fit-content;
+    margin: auto;
 }
 .botonHome {
     font-size: 1rem;

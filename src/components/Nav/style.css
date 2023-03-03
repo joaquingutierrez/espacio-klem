@@ -126,7 +126,7 @@
         height: 48px;
         position: sticky;
         top: 0;
-        z-index: 200000000000000000000000000000;
+        z-index: 200000000000000;
     }
 
     .navBarLink {
