@@ -70,7 +70,7 @@
     text-decoration: underline;
 }
 
-@media (min-width:0) and (max-width:839px) {
+@media (min-width:0) and (max-width:1344px) {
     .contenidoDeContacto {
         flex-direction: column;
         gap: 0;
