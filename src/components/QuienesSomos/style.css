@@ -1,6 +1,7 @@
 #quienesSomosContainer {
-    width: 1136px;
+    max-width: 1136px;
     margin: auto;
+    padding: 0 24px;
 }
 
 .tituloQuienesSomos {
@@ -13,27 +14,36 @@
 .contenedorSobreNuestroEspacio {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 5%;
     margin-top: 50px;
 }
-.contenedorSobreNosotros{
+
+.contenedorSobreNosotros {
     display: flex;
     align-items: center;
     gap: 5%;
-    margin-top: 50px;
 }
 
 .contenedorImagenSobreNuestroEspacio {
     width: 552px;
     min-width: 552px;
-    height: 648px;
+    height: fit-content;
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
 .contenedorImagenSobreNosotros {
     width: 552px;
     min-width: 552px;
-    height: 416px;
+    height: fit-content;
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
 }
 
 .textoQuienesSomos {
@@ -54,72 +64,54 @@
     line-height: 24px;
 }
 
-@media (min-width:1121px) and (max-width:1260px) {
+@media (min-width:897px) and (max-width:1024px) {
     .contenedorImagenSobreNuestroEspacio {
-        width: 452px;
-        min-width: 452px;
-        height: 548px;
+        width: 470px;
+        min-width: 470px;
     }
+
     .contenedorImagenSobreNuestroEspacio img {
-        width: 452px;
+        width: 470px;
+        min-width: 470px;
     }
+
     .contenedorImagenSobreNosotros {
-        width: 452px;
-        min-width: 452px;
-        height: 316px;
+        width: 460px;
+        min-width: 460px;
+    }
+
+    .contenedorImagenSobreNosotros img {
+        width: 460px;
+        min-width: 460px;
     }
 }
-@media (min-width:981px) and (max-width:1120px) {
-    .contenedorImagenSobreNuestroEspacio {
-        width: 352px;
-        min-width: 352px;
-        height: 448px;
-    }
-    .contenedorImagenSobreNuestroEspacio img {
-        width: 352px;
-    }
-    .contenedorImagenSobreNosotros {
-        width: 352px;
-        min-width: 352px;
-        height: 216px;
-    }
-}
-@media (min-width:840px) and (max-width:980px) {
-    .contenedorImagenSobreNuestroEspacio {
-        width: 252px;
-        min-width: 252px;
-        height: 348px;
-    }
-    .contenedorImagenSobreNuestroEspacio img {
-        width: 252px;
-    }
-    .contenedorImagenSobreNosotros {
-        width: 252px;
-        min-width: 252px;
-        height: 116px;
-    }
-}
+
 @media (min-width:0) and (max-width:896px) {
     .contenedorImagenSobreNuestroEspacio {
         width: 300px;
         min-width: 300px;
         height: 396px;
     }
+
     .contenedorImagenSobreNuestroEspacio img {
         width: 300px;
     }
+
     .contenedorImagenSobreNosotros {
         width: 300px;
         min-width: 300px;
         height: 164px;
     }
+
     .contenedorSobreNuestroEspacio {
         flex-direction: column;
     }
+
     .contenedorSobreNosotros {
         flex-direction: column-reverse;
     }
 }
+
 @media (min-width:0) and (max-width:480px) {
     #quienesSomosContainer {
         width: 75%;
