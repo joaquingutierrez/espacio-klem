@@ -11,6 +11,7 @@ import logoReloj from "../../assets/Clock.png"
 
 import { slide as Menu } from 'react-burger-menu'
 import menuHamburguesa from "../../assets/Menu.png"
+import crossButton from "../../assets/Close.png"
 
 const Nav = () => {
 
@@ -145,7 +146,7 @@ const Nav = () => {
     return (
         <>
             <div className="navParaMovile">
-                <Menu width={'100%'} customBurgerIcon={<img src={menuHamburguesa} />} isOpen={state.menuOpen} onStateChange={(state) => handleStateChange(state)}>
+                <Menu width={'100%'} customBurgerIcon={<img src={menuHamburguesa} />} customCrossIcon={<img src={crossButton} />} isOpen={state.menuOpen} onStateChange={(state) => handleStateChange(state)}>
                     {navLinks.map((item, index) => {
                         return <h2 onClick={() => closeMenu()} key={index} className="navBarItem menu-item"><a id={item.id + "menuHamburguesa"} className="navBarLink" href={item.href}>{item.name}</a></h2>
                     })}
