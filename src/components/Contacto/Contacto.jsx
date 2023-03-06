@@ -39,7 +39,7 @@ function Contacto() {
               <img src={envelopeLogo} alt="Logo de una carta" />
               <p className="EmailContacto">Email: <a className='linkEspacioKlem' href="mailto:espacioklem@gmail.com">espacioklem@gmail.com</a></p>
             </div>
-            <p className="asistenciaContacto"> La asistencia es únicamente con turno.</p>
+            <p className="asistenciaContacto">La asistencia es únicamente con turno.</p>
             <p className="asistenciaContacto">En caso de querer cancelar el turno, por favor, avisanos con anticipación.</p>
 
           </div>
