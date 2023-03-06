@@ -4,9 +4,13 @@
     font-size: 2.25rem;
     text-align: center;
 }
-.rectanguloParaRegalar {
+.fondoClaroParaRegalar {
     width: 100%;
     background: #DED8BE;
+}
+.rectanguloParaRegalar {
+    max-width: 1440px;
+    margin: auto;
     position: relative;
     display: flex;
     align-items: center;

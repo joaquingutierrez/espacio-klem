@@ -1,5 +1,5 @@
 #preguntasFrecuentesContainer {
-    width: 75%;
+    max-width: 1440px;
     margin: auto;
 }
 
@@ -8,6 +8,7 @@
     align-items: flex-start;
     justify-content: space-between;
     gap: 40px;
+    margin: 0 102px;
 }
 .seccionPreguntas div {
     width: 100%;
