@@ -1,4 +1,4 @@
-.contenedorCard{
+.contenedorCard {
     width: 264px;
 }
 
@@ -8,12 +8,14 @@
     border-radius: 50% 50% 0 0;
 }
 
-.tituloCard{
+.tituloCard {
     font-family: 'Arima Madurai', cursive;
     color: #DED8BE;
     font-size: 1.5rem;
     text-align: center;
     margin: 10px;
+    line-height: 2rem;
+    letter-spacing: 0.015em;
 }
 
 .parrafoCard {
@@ -23,5 +25,13 @@
     margin: 10px;
     text-align: left;
     letter-spacing: 0.5px;
-    line-height: 24px;
+    line-height: 1.5rem;
+}
+
+.alturaParrafoMasajes {
+    height: 9rem;
+}
+
+.alturaParrafoBelleza {
+    height: 15rem;
 }
